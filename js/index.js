@@ -187,13 +187,7 @@ function init() {
       displayGameDetails();
       break;
     case "/games.html":
-      window.addEventListener("scroll", () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-          gamesApiLength += 10;
-          displayGames(gamesApiLength);
-        }
-        document.getElementById("top-btn").addEventListener("click", topPage);
-      });
+      displayGames(9999);
     default:
       break;
   }
