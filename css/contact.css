@@ -1,0 +1,137 @@
+body {
+  background-color: var(--darkColor);
+}
+
+main {
+  padding-top: 80px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+  margin-top: 60px;
+  gap: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.contact-form h2,
+.contact-info h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--white);
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+.contact-form form label {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: var(--headersFont);
+  margin-block: 15px;
+  color: var(--white);
+}
+
+.contact-form form label::first-letter {
+  color: var(--mainColor);
+}
+
+.contact-form form input,
+textarea {
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+.contact-form form input::placeholder,
+textarea::placeholder {
+  color: var(--mainColor);
+}
+
+.contact-form form button {
+  padding: 10px;
+  font-size: 18px;
+  color: var(--mainColor);
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--mainColor);
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+.contact-info {
+  width: 48%;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info h3 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: var(--white);
+}
+
+.contact-info p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: var(--secondaryText);
+  color: var(--white);
+}
+
+.contact-info .social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.contact-info .social-links a {
+  font-size: 25px;
+  color: var(--mainColor);
+  transition: opacity 0.3s;
+}
+
+.contact-info .social-links a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: var(--black);
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .contact-wrapper {
+    flex-wrap: wrap;
+  }
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .contact-info .social-links {
+    margin-inline: auto;
+  }
+
+  .contact-info .social-links a {
+    margin-right: 10px;
+  }
+}

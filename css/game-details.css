@@ -1,0 +1,169 @@
+section.game-details-sec {
+  padding-top: 88px;
+  position: relative;
+  background-color: #292935;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.overlay {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.game-details-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.game-short-info {
+  width: 30%;
+}
+
+.game-short-info img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.game-short-info h3 {
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 22px;
+  margin-block: 15px;
+  letter-spacing: 1.5px;
+}
+
+.game-short-info h3::first-letter {
+  color: var(--mainColor);
+}
+
+.game-short-info p {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.game-short-info i {
+  color: #357ec7;
+  font-size: 20px;
+  float: right;
+}
+
+.game-long-info {
+  width: 50%;
+}
+
+.game-long-info p,
+.game-long-info p a {
+  color: var(--white);
+  font-size: 19px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-family: var(--secondaryText);
+  letter-spacing: 1.5px;
+  overflow: hidden;
+}
+
+.game-long-info p span {
+  font-family: var(--headersFont);
+  color: var(--mainColor);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.game-long-info p i {
+  color: #357ec7;
+}
+
+.game-pics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-pics img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.back-btn {
+  padding: 15px;
+  background-color: var(--darkColor);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.back-btn a {
+  color: var(--white);
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .game-details-wrapper {
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .game-short-info {
+    width: 100%;
+  }
+
+  .game-pics {
+    flex-direction: column;
+  }
+
+  .game-pics img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .back-btn {
+    padding: 10px;
+    background-color: var(--darkColor);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .game-long-info {
+    width: 100%;
+  }
+
+  .game-long-info p,
+  .game-long-info p a {
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .game-long-info p span {
+    font-size: 16px;
+  }
+}

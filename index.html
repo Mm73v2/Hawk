@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hawk</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="layout"></div>
+    <div class="user-authentication-wrapper" id="signup-wrapper">
+      <h2>sign up</h2>
+      <button class="close" id="close-signup">
+        <i class="fas fa-times"></i>
+      </button>
+      <form class="sign-up-form">
+        <label for="name">name</label>
+        <input type="text" id="name" required placeholder="Name" />
+        <label for="email">email</label>
+        <input type="text" id="email" required placeholder="Email" />
+        <label for="pass">password</label>
+        <input type="password" id="pass" required placeholder="Password" />
+        <button role="submit">sign up</button>
+      </form>
+      <div class="line">or</div>
+      <div class="sign-up-links">
+        <a href="#"><i class="fab fa-google"></i></a
+        ><a href="#"><i class="fab fa-facebook-square"></i></a
+        ><a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="log-in-opt">
+        <p>already a user? <button id="login-opt">login</button></p>
+      </div>
+    </div>
+    <div class="user-authentication-wrapper" id="login-wrapper">
+      <h2>log in</h2>
+      <button class="close" id="close-login">
+        <i class="fas fa-times"></i>
+      </button>
+      <form class="sign-up-form">
+        <label for="email">email</label>
+        <input type="text" id="email" required placeholder="Email" />
+        <label for="pass">password</label>
+        <input type="password" id="pass" required placeholder="Password" />
+        <button role="submit">login</button>
+      </form>
+      <div class="line">or</div>
+      <div class="sign-up-links">
+        <a href="#"><i class="fab fa-google"></i></a
+        ><a href="#"><i class="fab fa-facebook-square"></i></a
+        ><a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="log-in-opt">
+        <p>don't have an account? <button id="signup-opt">sign up</button></p>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/hawk-logo.jpg" alt="" />
+          <h2>hawk</h2>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i>home</a>
+          </li>
+          <li>
+            <a href="games.html"><i class="fas fa-gamepad"></i>games</a>
+          </li>
+          <li>
+            <a href="#partners"><i class="fas fa-handshake"></i>partners</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-phone"></i>contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="ham-menu"><i class="fas fa-bars"></i></div>
+      <ul class="side-nav">
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i>home</a>
+        </li>
+        <li>
+          <a href="games.html"><i class="fas fa-gamepad"></i>games</a>
+        </li>
+        <li>
+          <a href="#partners"><i class="fas fa-handshake"></i>partners</a>
+        </li>
+        <li>
+          <a href="contact.html"><i class="fas fa-phone"></i>contact</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <section class="landing-page">
+        <div class="container">
+          <div class="landing-page-wrapper">
+            <div class="landing-page-content">
+              <h1>welcome to hawk <span>gaming</span> library app!</h1>
+              <p>
+                hawk is a gaming library app that shows the latest games on the
+                market.
+              </p>
+              <div class="landing-btns">
+                <button id="signup">sign up</button>
+                <button id="login">log in</button>
+              </div>
+            </div>
+            <div class="landing-page-img">
+              <img src="images/hawk-landing-page.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gaming sec-pd">
+        <header class="gaming-header">
+          <h2>our games</h2>
+        </header>
+        <div class="container">
+          <div class="gaming-wrapper" id="game-items"></div>
+          <div class="button-ctn">
+            <button class="games-sec-btn">
+              <a href="games.html"
+                >explore all games <i class="fas fa-chevron-circle-right"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial sec-pd" id="partners">
+        <header class="testi-header">
+          <h2>our guys</h2>
+        </header>
+        <div class="container">
+          <div class="testimonial-container">
+            <div class="testi-box">
+              <img src="images/testi-shroud.webp" alt="" />
+              <h3>shroud</h3>
+              <p>this library is really cool!</p>
+              <img src="images/testi-valorant.jpg" alt="" />
+              <p>pro shooter games player-streamer</p>
+            </div>
+
+            <div class="testi-box">
+              <img src="images/testi-ninja.jpg" alt="" />
+              <h3>ninja</h3>
+              <p>one of the best gaming websites outhere</p>
+              <img src="images/testi-fortnite.png" alt="" />
+              <p>fortnite streamer</p>
+            </div>
+
+            <div class="testi-box">
+              <img src="images/testi-tyler1.webp" alt="" />
+              <h3>tyler1</h3>
+              <p>it's better than draven</p>
+              <img src="images/testi-lol.jpg" alt="" />
+              <p>lol streamer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="sec-pd">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="index.html"><img src="images/hawk-logo.jpg" alt="" /></a>
+          <h3>hawk</h3>
+        </div>
+        <div class="footer-site-links">
+          <a href="index.html"><i class="fas fa-home"></i> home</a
+          ><a href="games.html"><i class="fas fa-gamepad"></i> games</a
+          ><a href="#partners"><i class="fas fa-handshake"></i> parteners</a
+          ><a href="contact.html"><i class="fas fa-phone"></i> contact</a>
+        </div>
+        <div class="footer-info">
+          <p>hawk 2024 all rights reserved &reg;</p>
+          <p>design and development by <span>mohamed abobakr</span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
