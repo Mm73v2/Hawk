@@ -112,6 +112,14 @@ async function fetchApiData(endpoint) {
   const data = await res.json();
   return data;
 }
+// to scroll games infinity on the games page
+// function infinitScroll() {
+//   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+//     gamesApiLength += 10;
+//     displayGames(gamesApiLength);
+//   }
+//   document.getElementById("top-btn").addEventListener("click", topPage);
+// }
 // the button that takes you to the top of the page
 function topPage() {
   window.scrollTo(0, 0);
@@ -186,8 +194,6 @@ function init() {
     case "/game-details.html":
       displayGameDetails();
       break;
-    case "/games.html":
-      displayGames(9999);
     default:
       break;
   }
@@ -195,3 +201,4 @@ function init() {
 
 document.querySelector(".ham-menu").addEventListener("click", toggleMenu);
 document.addEventListener("DOMContentLoaded", init());
+export { displayGames, fetchApiData, topPage };
